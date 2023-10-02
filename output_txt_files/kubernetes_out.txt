@@ -1,11 +1,16 @@
 <paste log output from Kubernetes-mediated prediction, here>
-[2023-10-02 16:01:18,129] INFO in app: JSON payload: 
-{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
-[2023-10-02 16:01:18,141] INFO in app: Inference payload DataFrame: 
-   CHAS     RM    TAX  PTRATIO      B  LSTAT
-0     0  6.575  296.0     15.3  396.9   4.98
-[2023-10-02 16:01:18,154] INFO in app: Scaling Payload: 
-   CHAS     RM    TAX  PTRATIO      B  LSTAT
-0     0  6.575  296.0     15.3  396.9   4.98
-[2023-10-02 16:01:18,184] INFO in app: Output prediction: [20.35373177134412]
-172.17.0.1 - - [02/Oct/2023 16:01:18] "POST /predict HTTP/1.1" 200 -
+
+Error from server (AlreadyExists): pods "devopsproj2023" already exists
+NAME             READY   STATUS             RESTARTS   AGE
+devopsproj2023   1/1     Running            0          2m9s
+proj3            0/1     ImagePullBackOff   0          15m
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
