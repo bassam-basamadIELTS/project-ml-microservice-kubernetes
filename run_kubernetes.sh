@@ -4,20 +4,18 @@
 
 # Step 1:
 # This is your Docker ID/path
-# dockerpath=<>
-dockerpath="clairelee7522/mlapi"
+dockerpath="bassambasamad/devopsproj2023"
 
 # Step 2
-# Run the Docker Hub container with kubernetes
-kubectl run mlmicroserviceapi\
-    --generator=run-pod/v1\
-    --image=$dockerpath\
-    --port=80 --labels app=mlmicroserviceapi
+# Run the Docker Hub container with Kubernetes
+kubectl run devopsproj2023 \
+    --image=$dockerpath \
+    --port=80 --labels "app=devopsproj2023"
 
 # Step 3:
-# List kubernetes pods
+# List Kubernetes pods
 kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward mlmicroserviceapi 8000:80
+kubectl port-forward devopsproj2023 8000:80

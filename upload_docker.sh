@@ -6,14 +6,15 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
-dockerpath="clairelee7522/mlapi"
+dockerpath="bassambasamad/devopsproj2023"
+
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker login &&\
-    docker image tag mlapi $dockerpath
+docker login
+docker image tag devopsproj2023 $dockerpath
 
 # Step 3:
 # Push image to a docker repository
-docker image push $dockerpath
+docker push $dockerpath
