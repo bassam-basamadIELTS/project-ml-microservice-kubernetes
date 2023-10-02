@@ -1,5 +1,5 @@
-[![CircleCI](https://circleci.com/gh/bassam-basamadIELTS/App-AutoDeploy-SuperPowers.svg?style=svg)]
-(https://circleci.com/gh/bassam-basamadIELTS/App-AutoDeploy-SuperPowers)
+[![CircleCI](https://circleci.com/gh/bassam-basamadIELTS/project-ml-microservice-kubernetes.svg?style=svg)]
+(https://circleci.com/gh/bassam-basamadIELTS/project-ml-microservice-kubernetes)
 
 
 
