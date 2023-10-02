@@ -4,7 +4,7 @@
 
 # Step 1:
 # Build image and add a descriptive tag
-docker build --tag=devopsproj2023 .
+docker build --tag=proj3 .
 
 # Step 2: 
 # List docker images
@@ -12,4 +12,4 @@ docker images list
 
 # Step 3: 
 # Run flask app
-docker run -p 8000:80 devopsproj2023
+docker run -p 8000:80 proj3

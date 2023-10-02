@@ -6,14 +6,14 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
-dockerpath="bassambasamad/devopsproj2023"
+dockerpath="bassambasamad/proj3"
 
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 docker login
-docker image tag devopsproj2023 $dockerpath
+docker image tag proj3 $dockerpath
 
 # Step 3:
 # Push image to a docker repository
