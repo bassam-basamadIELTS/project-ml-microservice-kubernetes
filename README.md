@@ -38,6 +38,32 @@ source DevOpsbin/activate
 ```
 * Run `make install` to install the necessary dependencies
 
+### Install `docker` steps
+
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo chmod 777 /var/run/docker.sock
+
+### Install `hadolint` steps
+
+wget -O hadolint https://github.com/hadolint/hadolint/releases/download/{latest-version}/hadolint-Linux-x86_64
+chmod +x hadolint
+sudo mv hadolint /usr/local/bin/
+
+
+### Install `Kubernetes (Minikube)` steps  
+
+#minikube
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+chmod +x minikube
+sudo mv minikube /usr/local/bin/
+
+#kubectl
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+chmod +x kubectl
+sudo mv kubectl /usr/local/bin/
+
+
 ### Running `app.py`
 
 1. Standalone:  `python app.py`
