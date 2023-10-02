@@ -67,10 +67,24 @@ sudo mv kubectl /usr/local/bin/
 ### Running `app.py`
 
 1. Standalone:  `python app.py`
-2. Run in Docker:  `./run_docker.sh`
+2. Run make lint
+3. Run in Docker:  `./run_docker.sh`
 4. Run `./make_prediction.sh`
 3. Run in Kubernetes:  `./run_kubernetes.sh`
-5. Run `./make_prediction.sh`
+6. Run `./make_prediction.sh`
+
+# The output of make lint should be as exmple below:
+
+(.devops) bassam_basamad@udacityserver:~/udacityProject/project-ml-microservice-kubernetes$ make lint
+ See local hadolint install instructions:   https://github.com/hadolint/hadolint
+ This is linter for Dockerfiles
+hadolint Dockerfile
+ This is a linter for Python source code linter: https://www.pylint.org/
+ This should be run from inside a virtualenv
+pylint --disable=R,C,W1203,W1202 app.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 ### Kubernetes Steps
 
