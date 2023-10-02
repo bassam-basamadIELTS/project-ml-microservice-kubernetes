@@ -1,5 +1,5 @@
-[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)]
-(https://app.circleci.com/pipelines/github/bassam-basamadIELTS/App-AutoDeploy-SuperPowers)
+[![CircleCI](https://circleci.com/gh/circleci/App-AutoDeploy-SuperPowers.svg?style=svg)]
+(https://circleci.com/gh/circleci/App-AutoDeploy-SuperPowers)
 
 
 
